@@ -1,4 +1,4 @@
-package ch01.duck_tryMyself.model;
+package ch01.duck_tryMyself.model.duck;
 
 import ch01.duck_tryMyself.behavior.fly.FlyNoWay;
 import ch01.duck_tryMyself.behavior.sound.MuteQuack;

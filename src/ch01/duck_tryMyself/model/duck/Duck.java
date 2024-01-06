@@ -1,11 +1,11 @@
-package ch01.duck_tryMyself.model;
+package ch01.duck_tryMyself.model.duck;
 
 import ch01.duck_tryMyself.behavior.fly.FlyBehavior;
 import ch01.duck_tryMyself.behavior.sound.QuackBehavior;
 
 public abstract class Duck {
-    private FlyBehavior flyBehavior;
-    private QuackBehavior quackBehavior;
+    private final FlyBehavior flyBehavior;
+    private final QuackBehavior quackBehavior;
 
     Duck(FlyBehavior flyBehavior , QuackBehavior quackBehavior){
         this.flyBehavior = flyBehavior;
