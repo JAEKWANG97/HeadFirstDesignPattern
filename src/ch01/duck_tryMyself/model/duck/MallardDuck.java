@@ -6,7 +6,7 @@ import ch01.duck_tryMyself.behavior.sound.Quack;
 public class MallardDuck extends Duck {
 
     public MallardDuck() {
-        super(new FlyWithWings(), new Quack());
+        setFlyBehavior(new FlyWithWings());
     }
 
     @Override

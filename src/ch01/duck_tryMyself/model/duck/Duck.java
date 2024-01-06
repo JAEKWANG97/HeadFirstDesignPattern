@@ -4,14 +4,16 @@ import ch01.duck_tryMyself.behavior.fly.FlyBehavior;
 import ch01.duck_tryMyself.behavior.sound.QuackBehavior;
 
 public abstract class Duck {
-    private final FlyBehavior flyBehavior;
-    private final QuackBehavior quackBehavior;
+    private FlyBehavior flyBehavior;
+    private QuackBehavior quackBehavior;
 
-    Duck(FlyBehavior flyBehavior , QuackBehavior quackBehavior){
+    public void setFlyBehavior(FlyBehavior flyBehavior) {
         this.flyBehavior = flyBehavior;
-        this.quackBehavior = quackBehavior;
     }
 
+    public void setQuackBehavior(QuackBehavior quackBehavior) {
+        this.quackBehavior = quackBehavior;
+    }
 
     public void performQuack() {
         quackBehavior.quack();

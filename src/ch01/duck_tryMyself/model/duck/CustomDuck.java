@@ -2,12 +2,14 @@ package ch01.duck_tryMyself.model.duck;
 
 import ch01.duck_tryMyself.behavior.fly.FlyNoWay;
 import ch01.duck_tryMyself.behavior.sound.MuteQuack;
+import ch01.duck_tryMyself.behavior.sound.Quack;
 
 public class CustomDuck extends Duck {
 
 
     public CustomDuck() {
-        super(new FlyNoWay(), new MuteQuack());
+        setFlyBehavior(new FlyNoWay());
+        setQuackBehavior(new Quack());
     }
 
     @Override
