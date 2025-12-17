@@ -1,1 +1,4 @@
-# HeadFirstDesignPattern 에 대한 공부 입니다.
+# HeadFirstDesignPattern
+
+## 전략 패턴
+- 
